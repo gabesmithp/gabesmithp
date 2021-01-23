@@ -28,28 +28,70 @@ code {
 
 /* POSITIONING */
 
-.rel { position: relative }
-.abs { position: absolute }
-.fix { position: fixed }
-.fill, .top { top: 0 }
-.fill, .bottom { bottom: 0 }
-.fill, .left { left: 0 }
-.fill, .right { right: 0 }
-.x { width: 100% }
-.y { height: 100% }
+.rel {
+  position: relative;
+}
+.abs {
+  position: absolute;
+}
+.fix {
+  position: fixed;
+}
+.fill,
+.top {
+  top: 0;
+}
+.fill,
+.bottom {
+  bottom: 0;
+}
+.fill,
+.left {
+  left: 0;
+}
+.fill,
+.right {
+  right: 0;
+}
+.x {
+  width: 100%;
+}
+.y {
+  height: 100%;
+}
 
 /* FLEXBOX */
 
-.f { display: flex }
-.fw { flex-wrap: wrap }
-.ais { align-items: flex-start }
-.aie { align-items: flex-end }
-.aic { align-items: center }
-.aib { align-items: baseline }
-.jcs { justify-content: flex-start }
-.jce { justify-content: flex-end }
-.jcc { justify-content: center }
-.jcb { justify-content: space-between }
+.f {
+  display: flex;
+}
+.fw {
+  flex-wrap: wrap;
+}
+.ais {
+  align-items: flex-start;
+}
+.aie {
+  align-items: flex-end;
+}
+.aic {
+  align-items: center;
+}
+.aib {
+  align-items: baseline;
+}
+.jcs {
+  justify-content: flex-start;
+}
+.jce {
+  justify-content: flex-end;
+}
+.jcc {
+  justify-content: center;
+}
+.jcb {
+  justify-content: space-between;
+}
 .fa {
   flex: 1 1 auto;
   min-width: 0;
@@ -59,59 +101,73 @@ code {
 /* TYPOGRAPHY AND SCALE */
 
 .s1,
-h1, .h1 {
+h1,
+.h1 {
   font-size: 4rem;
 }
-h1, .h1 { 
+h1,
+.h1 {
   line-height: 1.1;
 }
 .s2,
-h2, .h2 { 
+h2,
+.h2 {
   font-size: 3rem;
 }
-h2, .h2 { 
+h2,
+.h2 {
   line-height: 1.3;
 }
 .s3,
-h3, .h3 { 
+h3,
+.h3 {
   font-size: 2rem;
 }
-h3, .h3 { 
+h3,
+.h3 {
   line-height: 1.5;
 }
 .s4,
-h4, .h4 { 
+h4,
+.h4 {
   font-size: 1.5rem;
 }
-h4, .h4 { 
+h4,
+.h4 {
   line-height: 1.5;
 }
 .s5,
-h5, .h5 { 
+h5,
+.h5 {
   font-size: 1rem;
 }
-h5, .h5 { 
+h5,
+.h5 {
   line-height: 1.6;
 }
 .s6,
-h6, .h6 { 
+h6,
+.h6 {
   font-size: 0.875rem;
 }
-h6, .h6 { 
+h6,
+.h6 {
   line-height: 1.6;
 }
 .s0,
-p, .p { 
+p,
+.p {
   font-size: 1rem;
 }
-p, .p { 
+p,
+.p {
   line-height: 1.7;
 }
-p { 
-  margin: 1em 0
+p {
+  margin: 1em 0;
 }
 a {
-  color: inherit
+  color: inherit;
 }
 hr {
   display: block;
@@ -122,13 +178,16 @@ hr {
   background-color: currentColor;
   color: inherit;
 }
-small, .small {
+small,
+.small {
   font-size: 0.75em;
 }
-strong, .b {
+strong,
+.b {
   font-weight: bold;
 }
-em, .i {
+em,
+.i {
   font-style: italic;
 }
 .caps {
@@ -140,71 +199,245 @@ em, .i {
 
 /* SPACING */
 
-.mxa, .ma { margin-left: auto }
-.mxa, .ma { margin-right: auto }
-.mya, .ma { margin-top: auto }
-.mya, .ma { margin-bottom: auto; }
+.mxa,
+.ma {
+  margin-left: auto;
+}
+.mxa,
+.ma {
+  margin-right: auto;
+}
+.mya,
+.ma {
+  margin-top: auto;
+}
+.mya,
+.ma {
+  margin-bottom: auto;
+}
 
-.mt0, .my0, .m0 { margin-top: 0 }
-.mb0, .my0, .m0 { margin-bottom: 0 }
+.mt0,
+.my0,
+.m0 {
+  margin-top: 0;
+}
+.mb0,
+.my0,
+.m0 {
+  margin-bottom: 0;
+}
 
-.mt025, .my025, .m025 { margin-top: 0.25em }
-.mb025, .my025, .m025 { margin-bottom: 0.25em }
-.ml025, .mx025, .m025 { margin-left: 0.25em }
-.mr025, .mx025, .m025 { margin-right: 0.25em }
-.pt025, .py025, .p025 { padding-top: 0.25em }
-.pb025, .py025, .p025 { padding-bottom: 0.25em }
-.pl025, .px025, .p025 { padding-left: 0.25em }
-.pr025, .px025, .p025 { padding-right: 0.25em }
+.mt025,
+.my025,
+.m025 {
+  margin-top: 0.25em;
+}
+.mb025,
+.my025,
+.m025 {
+  margin-bottom: 0.25em;
+}
+.ml025,
+.mx025,
+.m025 {
+  margin-left: 0.25em;
+}
+.mr025,
+.mx025,
+.m025 {
+  margin-right: 0.25em;
+}
+.pt025,
+.py025,
+.p025 {
+  padding-top: 0.25em;
+}
+.pb025,
+.py025,
+.p025 {
+  padding-bottom: 0.25em;
+}
+.pl025,
+.px025,
+.p025 {
+  padding-left: 0.25em;
+}
+.pr025,
+.px025,
+.p025 {
+  padding-right: 0.25em;
+}
 
-.mt05, .my05, .m05 { margin-top: 0.5em }
-.mb05, .my05, .m05 { margin-bottom: 0.5em }
-.ml05, .mx05, .m05 { margin-left: 0.5em }
-.mr05, .mx05, .m05 { margin-right: 0.5em }
-.pt05, .py05, .p05 { padding-top: 0.5em }
-.pb05, .py05, .p05 { padding-bottom: 0.5em }
-.pl05, .px05, .p05 { padding-left: 0.5em }
-.pr05, .px05, .p05 { padding-right: 0.5em }
+.mt05,
+.my05,
+.m05 {
+  margin-top: 0.5em;
+}
+.mb05,
+.my05,
+.m05 {
+  margin-bottom: 0.5em;
+}
+.ml05,
+.mx05,
+.m05 {
+  margin-left: 0.5em;
+}
+.mr05,
+.mx05,
+.m05 {
+  margin-right: 0.5em;
+}
+.pt05,
+.py05,
+.p05 {
+  padding-top: 0.5em;
+}
+.pb05,
+.py05,
+.p05 {
+  padding-bottom: 0.5em;
+}
+.pl05,
+.px05,
+.p05 {
+  padding-left: 0.5em;
+}
+.pr05,
+.px05,
+.p05 {
+  padding-right: 0.5em;
+}
 
-.mt075, .my075, .m075 { margin-top: 0.75em }
-.mb075, .my075, .m075 { margin-bottom: 0.75em }
-.ml075, .mx075, .m075 { margin-left: 0.75em }
-.mr075, .mx075, .m075 { margin-right: 0.75em }
-.pt075, .py075, .p075 { padding-top: 0.75em }
-.pb075, .py075, .p075 { padding-bottom: 0.75em }
-.pl075, .px075, .p075 { padding-left: 0.75em }
-.pr075, .px075, .p075 { padding-right: 0.75em }
+.mt075,
+.my075,
+.m075 {
+  margin-top: 0.75em;
+}
+.mb075,
+.my075,
+.m075 {
+  margin-bottom: 0.75em;
+}
+.ml075,
+.mx075,
+.m075 {
+  margin-left: 0.75em;
+}
+.mr075,
+.mx075,
+.m075 {
+  margin-right: 0.75em;
+}
+.pt075,
+.py075,
+.p075 {
+  padding-top: 0.75em;
+}
+.pb075,
+.py075,
+.p075 {
+  padding-bottom: 0.75em;
+}
+.pl075,
+.px075,
+.p075 {
+  padding-left: 0.75em;
+}
+.pr075,
+.px075,
+.p075 {
+  padding-right: 0.75em;
+}
 
-.mt1, .my1, .m1 { margin-top: 1em }
-.mb1, .my1, .m1 { margin-bottom: 1em }
-.ml1, .mx1, .m1 { margin-left: 1em }
-.mr1, .mx1, .m1 { margin-right: 1em }
-.pt1, .py1, .p1 { padding-top: 1em }
-.pb1, .py1, .p1 { padding-bottom: 1em }
-.pl1, .px1, .p1 { padding-left: 1em }
-.pr1, .px1, .p1 { padding-right: 1em }
+.mt1,
+.my1,
+.m1 {
+  margin-top: 1em;
+}
+.mb1,
+.my1,
+.m1 {
+  margin-bottom: 1em;
+}
+.ml1,
+.mx1,
+.m1 {
+  margin-left: 1em;
+}
+.mr1,
+.mx1,
+.m1 {
+  margin-right: 1em;
+}
+.pt1,
+.py1,
+.p1 {
+  padding-top: 1em;
+}
+.pb1,
+.py1,
+.p1 {
+  padding-bottom: 1em;
+}
+.pl1,
+.px1,
+.p1 {
+  padding-left: 1em;
+}
+.pr1,
+.px1,
+.p1 {
+  padding-right: 1em;
+}
 
 /* ALIGNMENT */
 
-.al { text-align: left }
-.ac { text-align: center }
-.ar { text-align: right }
-.aj { text-align: justify }
-
+.al {
+  text-align: left;
+}
+.ac {
+  text-align: center;
+}
+.ar {
+  text-align: right;
+}
+.aj {
+  text-align: justify;
+}
 
 /* Z INDEX */
 
-.z0 { z-index: 0 }
-.z1 { z-index: 100 }
-.z2 { z-index: 200 }
-.z3 { z-index: 300 }
-.z5 { z-index: 500 }
-.z6 { z-index: 600 }
-.z7 { z-index: 700 }
-.z8 { z-index: 800 }
-.z9 { z-index: 900 }
-.z10 { z-index: 1000 }
-
+.z0 {
+  z-index: 0;
+}
+.z1 {
+  z-index: 100;
+}
+.z2 {
+  z-index: 200;
+}
+.z3 {
+  z-index: 300;
+}
+.z5 {
+  z-index: 500;
+}
+.z6 {
+  z-index: 600;
+}
+.z7 {
+  z-index: 700;
+}
+.z8 {
+  z-index: 800;
+}
+.z9 {
+  z-index: 900;
+}
+.z10 {
+  z-index: 1000;
+}
 
 /********* CUSTOM CLASSES *********/
 
@@ -228,3 +461,29 @@ em, .i {
   top: 348px;
   bottom: 407.75;
 }
+
+.button {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 31px 80px;
+  position: absolute;
+  width: 264px;
+  height: 59px;
+  left: 241px;
+  top: 473px;
+  background: #ffcfab;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 14px;
+  box-shadow: 4px 4px 0px #000000;
+  transition: all .5s ease-in-out;
+}
+
+.button:hover {
+  box-shadow: 8px 8px 0px #000000;
+  left: 237px;
+  top: 469px;
+}
+
