@@ -26,7 +26,7 @@ code {
     'Courier New', monospace;
 }
 
-button {
+button, a {
   cursor: url('./Hand.png'), auto;
 }
 
@@ -351,16 +351,22 @@ em, .i { font-style: italic }
 /********* CUSTOM CLASSES *********/
 
 .navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 32px 0px;
-  position: relative;
+
+  padding: 10px 40px 0px;
   height: 107px;
   background: #ffcfab;
   border: 1px solid #000000;
   box-sizing: border-box;
+}
+
+.title {
+  font-size: 40px;
+  letter-spacing: 0.19em;
+}
+
+.nav-link {
+  margin: 0 1em;
+  font-size: 1.6em;
 }
 
 .blobs {

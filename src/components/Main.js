@@ -7,7 +7,7 @@ const Main = () => {
     <div>
       <Navbar />
       <img className="blobs" src={blobs} alt="blobs"/>
-      <button className="button ">Button</button>
+      <button className="button">Button</button>
     </div>
   )
 }
