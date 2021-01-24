@@ -1,6 +1,6 @@
 import React from 'react'
-import blobs from '../blobs.png'
-import Navbar from './Navbar'
+import blobs from '../images/blobs.png'
+import { Navbar, Footer } from './index'
 
 const Main = () => {
   return (
@@ -8,6 +8,7 @@ const Main = () => {
       <Navbar />
       <img className="blobs" src={blobs} alt="blobs"/>
       <button className="button">Button</button>
+      <Footer />
     </div>
   )
 }
