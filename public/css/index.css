@@ -1,0 +1,602 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Droid Sans', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Helvetica Neue', sans-serif;
+  cursor: url("../images/pointer.png"), auto;
+  position: relative;
+  min-width: 1000px;
+  height: 5470px;
+  margin: 0 0 0 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(77.08%, rgba(241, 204, 249, 0.08)), to(#d0ccf9)), -webkit-gradient(linear, left top, left bottom, color-stop(27.08%, rgba(104, 169, 239, 0)), color-stop(76.56%, rgba(104, 160, 239, 0.44))), #d0ccf9;
+  background: linear-gradient(180deg, rgba(241, 204, 249, 0.08) 77.08%, #d0ccf9 100%), linear-gradient(180deg, rgba(104, 169, 239, 0) 27.08%, rgba(104, 160, 239, 0.44) 76.56%), #d0ccf9;
+}
+
+code {
+  font-family: source-code-pro, 'Droid Sans', Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+button, a {
+  cursor: url("../images/hand.png"), auto;
+}
+
+/********* UTILITIES **********/
+/* POSITIONING */
+.rel {
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+}
+
+.fix {
+  position: fixed;
+}
+
+.fill,
+.top {
+  top: 0;
+}
+
+.fill,
+.bottom {
+  bottom: 0;
+}
+
+.fill,
+.left {
+  left: 0;
+}
+
+.fill,
+.right {
+  right: 0;
+}
+
+.x {
+  width: 100%;
+}
+
+.y {
+  height: 100%;
+}
+
+/* FLEXBOX */
+.f {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fw {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ais {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.aie {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.aic {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aib {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.jcs {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.jce {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.jcc {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.jcb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fa {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+}
+
+/* TYPOGRAPHY AND SCALE */
+.s1, h1, .h1 {
+  font-size: 4rem;
+}
+
+h1, .h1 {
+  line-height: 1.1;
+}
+
+.s2, h2, .h2 {
+  font-size: 3rem;
+}
+
+h2, .h2 {
+  line-height: 1.3;
+}
+
+.s3, h3, .h3 {
+  font-size: 2rem;
+}
+
+h3, .h3 {
+  line-height: 1.5;
+}
+
+.s4, h4, .h4 {
+  font-size: 1.5rem;
+}
+
+h4, .h4 {
+  line-height: 1.5;
+}
+
+.s5, h5, .h5 {
+  font-size: 1rem;
+}
+
+h5, .h5 {
+  line-height: 1.6;
+}
+
+.s6, h6, .h6 {
+  font-size: 0.875rem;
+}
+
+h6, .h6 {
+  line-height: 1.6;
+}
+
+.s0, p, .p {
+  font-size: 1rem;
+}
+
+p, .p {
+  line-height: 1.7;
+}
+
+p {
+  margin: 1em 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+hr {
+  display: block;
+  border: 0;
+  margin: 0;
+  height: 1px;
+  width: 100%;
+  background-color: currentColor;
+  color: inherit;
+}
+
+small, .small {
+  font-size: 0.75em;
+}
+
+strong, .b {
+  font-weight: bold;
+}
+
+em, .i {
+  font-style: italic;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.no-under {
+  text-decoration: none;
+}
+
+/* SPACING */
+.mxa, .ma {
+  margin-left: auto;
+}
+
+.mxa,
+.ma {
+  margin-right: auto;
+}
+
+.mya,
+.ma {
+  margin-top: auto;
+}
+
+.mya,
+.ma {
+  margin-bottom: auto;
+}
+
+.mt0,
+.my0,
+.m0 {
+  margin-top: 0;
+}
+
+.mb0,
+.my0,
+.m0 {
+  margin-bottom: 0;
+}
+
+.mt025,
+.my025,
+.m025 {
+  margin-top: 0.25em;
+}
+
+.mb025,
+.my025,
+.m025 {
+  margin-bottom: 0.25em;
+}
+
+.ml025,
+.mx025,
+.m025 {
+  margin-left: 0.25em;
+}
+
+.mr025,
+.mx025,
+.m025 {
+  margin-right: 0.25em;
+}
+
+.pt025,
+.py025,
+.p025 {
+  padding-top: 0.25em;
+}
+
+.pb025,
+.py025,
+.p025 {
+  padding-bottom: 0.25em;
+}
+
+.pl025,
+.px025,
+.p025 {
+  padding-left: 0.25em;
+}
+
+.pr025,
+.px025,
+.p025 {
+  padding-right: 0.25em;
+}
+
+.mt05,
+.my05,
+.m05 {
+  margin-top: 0.5em;
+}
+
+.mb05,
+.my05,
+.m05 {
+  margin-bottom: 0.5em;
+}
+
+.ml05,
+.mx05,
+.m05 {
+  margin-left: 0.5em;
+}
+
+.mr05,
+.mx05,
+.m05 {
+  margin-right: 0.5em;
+}
+
+.pt05,
+.py05,
+.p05 {
+  padding-top: 0.5em;
+}
+
+.pb05,
+.py05,
+.p05 {
+  padding-bottom: 0.5em;
+}
+
+.pl05,
+.px05,
+.p05 {
+  padding-left: 0.5em;
+}
+
+.pr05,
+.px05,
+.p05 {
+  padding-right: 0.5em;
+}
+
+.mt075,
+.my075,
+.m075 {
+  margin-top: 0.75em;
+}
+
+.mb075,
+.my075,
+.m075 {
+  margin-bottom: 0.75em;
+}
+
+.ml075,
+.mx075,
+.m075 {
+  margin-left: 0.75em;
+}
+
+.mr075,
+.mx075,
+.m075 {
+  margin-right: 0.75em;
+}
+
+.pt075,
+.py075,
+.p075 {
+  padding-top: 0.75em;
+}
+
+.pb075,
+.py075,
+.p075 {
+  padding-bottom: 0.75em;
+}
+
+.pl075,
+.px075,
+.p075 {
+  padding-left: 0.75em;
+}
+
+.pr075,
+.px075,
+.p075 {
+  padding-right: 0.75em;
+}
+
+.mt1,
+.my1,
+.m1 {
+  margin-top: 1em;
+}
+
+.mb1,
+.my1,
+.m1 {
+  margin-bottom: 1em;
+}
+
+.ml1,
+.mx1,
+.m1 {
+  margin-left: 1em;
+}
+
+.mr1,
+.mx1,
+.m1 {
+  margin-right: 1em;
+}
+
+.pt1,
+.py1,
+.p1 {
+  padding-top: 1em;
+}
+
+.pb1,
+.py1,
+.p1 {
+  padding-bottom: 1em;
+}
+
+.pl1,
+.px1,
+.p1 {
+  padding-left: 1em;
+}
+
+.pr1,
+.px1,
+.p1 {
+  padding-right: 1em;
+}
+
+/* ALIGNMENT */
+.al {
+  text-align: left;
+}
+
+.ac {
+  text-align: center;
+}
+
+.ar {
+  text-align: right;
+}
+
+.aj {
+  text-align: justify;
+}
+
+/* Z INDEX */
+.z0 {
+  z-index: 0;
+}
+
+.z1 {
+  z-index: 100;
+}
+
+.z2 {
+  z-index: 200;
+}
+
+.z3 {
+  z-index: 300;
+}
+
+.z5 {
+  z-index: 500;
+}
+
+.z6 {
+  z-index: 600;
+}
+
+.z7 {
+  z-index: 700;
+}
+
+.z8 {
+  z-index: 800;
+}
+
+.z9 {
+  z-index: 900;
+}
+
+.z10 {
+  z-index: 1000;
+}
+
+/********* CUSTOM CLASSES *********/
+.navbar {
+  padding: 0px 4em;
+  height: 6.5em;
+  background: #ffcfab;
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.title {
+  font-size: 36px;
+  letter-spacing: 0.19em;
+}
+
+.nav-link {
+  margin: 0 .8em;
+  font-size: 1.4em;
+}
+
+.blobs {
+  position: absolute;
+  min-width: 1901px;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: stretch;
+  height: 4714.25px;
+  top: 348px;
+  bottom: 407.75;
+}
+
+.button {
+  font-size: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 68px;
+  position: absolute;
+  width: 240px;
+  height: 45px;
+  left: 350px;
+  top: 500px;
+  background: #ffcfab;
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 14px;
+  -webkit-box-shadow: 4px 4px 0px #000000;
+          box-shadow: 4px 4px 0px #000000;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+
+.button:hover {
+  -webkit-box-shadow: 8px 8px 0px #000000;
+          box-shadow: 8px 8px 0px #000000;
+  left: 346px;
+  top: 496px;
+}
+
+.footer {
+  height: 96px;
+  background: #ffcfab;
+  border: 1px solid #000000;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-links {
+  height: 100%;
+}
+
+.footer-link {
+  height: 50%;
+  width: 50%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform .4s ease-in-out;
+  transition: -webkit-transform .4s ease-in-out;
+  transition: transform .4s ease-in-out;
+  transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+}
+
+.footer-link:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+/*# sourceMappingURL=index.css.map */

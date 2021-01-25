@@ -3,7 +3,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Droid Sans', 'Segoe UI',
     'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Helvetica Neue',
     sans-serif;
-  cursor: url('./images/pointer.png'), auto;
+  cursor: url('../images/pointer.png'), auto;
   position: relative;
   min-width: 1000px;
   height: 5470px;
@@ -27,7 +27,7 @@ code {
 }
 
 button, a {
-  cursor: url('./images/hand.png'), auto;
+  cursor: url('../images/hand.png'), auto;
 }
 
 /********* UTILITIES **********/
