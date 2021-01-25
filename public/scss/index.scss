@@ -1,3 +1,4 @@
+@import "variables";
 @import "utilities";
 
 body {
@@ -29,81 +30,93 @@ button, a {
   cursor: url('../images/hand.png'), auto;
 }
 
+/********* MIXINS *********/
+
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin buttonStyle() {
+  font-size: size(small);
+  background: $peach;
+  padding: 1.5em 4.3em;
+  border: 1px solid black;
+  border-radius: .9em;
+  box-shadow: 4px 4px 0px black;
+}
+
+/********* FUNCTIONS *********/
+
+@function size($size-name) {
+  @return map-get($font-sizes, $size-name);
+}
+
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
+
 /********* CUSTOM CLASSES *********/
 
 .navbar {
-  padding: 0px 4em;
+  background: $peach;
+  padding: 0 4em;
   height: 6.5em;
-  background: #ffcfab;
-  border: 1px solid #000000;
-  box-sizing: border-box;
+  border: 1px solid black;
 }
 
 .title {
-  font-size: 36px;
-  letter-spacing: 0.19em;
+  font-size: size(xlarge);
+  font-weight: weight(light);
+  letter-spacing: 0.3em;
 }
 
 .nav-link {
-  margin: 0 .8em;
+  margin: 0.8em;
   font-size: 1.4em;
 }
 
 .blobs {
   position: absolute;
-  min-width: 1901px;
+  min-width: 119em;
   width: stretch;
-  height: 4714.25px;
-  top: 348px;
-  bottom: 407.75;
+  height: 295em;
+  top: 22em;
 }
 
 .button {
-  font-size: 22px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 25px 68px;
+  @include flexCenter(row);
+  @include buttonStyle();
   position: absolute;
-  width: 240px;
-  height: 45px;
+  width: 15em;
+  height: 2.8em;
   left: 350px;
   top: 500px;
-  background: #ffcfab;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 14px;
-  box-shadow: 4px 4px 0px #000000;
   transition: all .6s ease-in-out;
-}
-
-.button:hover {
-  box-shadow: 8px 8px 0px #000000;
-  left: 346px;
-  top: 496px;
+  &:hover {
+    box-shadow: 8px 8px 0px #000000;
+    left: 346px;
+    top: 496px;
+  }
 }
 
 .footer {
-  height: 96px;
-  background: #ffcfab;
-  border: 1px solid #000000;
-
+  height: 6.5em;
+  background: $peach;
+  border: 1px solid black;
   position: absolute;
   bottom: 0;
   width: 100%;
 }
 
-.footer-links {
-  height: 100%;
-}
-
 .footer-link {
-  height: 50%;
-  width: 50%;
+  height: 55%;
+  width: 55%;
   transform: scale(1);
   transition: transform .4s ease-in-out;
-}
-
-.footer-link:hover {
-  transform: scale(1.07);
+  &:hover {
+    transform: scale(1.07);
+  }
 }

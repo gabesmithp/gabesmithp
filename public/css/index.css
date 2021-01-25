@@ -434,39 +434,38 @@ button, a {
   cursor: url("../images/hand.png"), auto;
 }
 
+/********* MIXINS *********/
+/********* FUNCTIONS *********/
 /********* CUSTOM CLASSES *********/
 .navbar {
-  padding: 0px 4em;
-  height: 6.5em;
   background: #ffcfab;
-  border: 1px solid #000000;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  padding: 0 4em;
+  height: 6.5em;
+  border: 1px solid black;
 }
 
 .title {
-  font-size: 36px;
-  letter-spacing: 0.19em;
+  font-size: 2.4em;
+  font-weight: 300;
+  letter-spacing: 0.3em;
 }
 
 .nav-link {
-  margin: 0 .8em;
+  margin: 0.8em;
   font-size: 1.4em;
 }
 
 .blobs {
   position: absolute;
-  min-width: 1901px;
+  min-width: 119em;
   width: -webkit-fill-available;
   width: -moz-available;
   width: stretch;
-  height: 4714.25px;
-  top: 348px;
-  bottom: 407.75;
+  height: 295em;
+  top: 22em;
 }
 
 .button {
-  font-size: 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -476,19 +475,22 @@ button, a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 25px 68px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 1.4em;
+  background: #ffcfab;
+  padding: 1.5em 4.3em;
+  border: 1px solid black;
+  border-radius: .9em;
+  -webkit-box-shadow: 4px 4px 0px black;
+          box-shadow: 4px 4px 0px black;
   position: absolute;
-  width: 240px;
-  height: 45px;
+  width: 15em;
+  height: 2.8em;
   left: 350px;
   top: 500px;
-  background: #ffcfab;
-  border: 1px solid #000000;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 14px;
-  -webkit-box-shadow: 4px 4px 0px #000000;
-          box-shadow: 4px 4px 0px #000000;
   -webkit-transition: all .6s ease-in-out;
   transition: all .6s ease-in-out;
 }
@@ -501,21 +503,17 @@ button, a {
 }
 
 .footer {
-  height: 96px;
+  height: 6.5em;
   background: #ffcfab;
-  border: 1px solid #000000;
+  border: 1px solid black;
   position: absolute;
   bottom: 0;
   width: 100%;
 }
 
-.footer-links {
-  height: 100%;
-}
-
 .footer-link {
-  height: 50%;
-  width: 50%;
+  height: 55%;
+  width: 55%;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition: -webkit-transform .4s ease-in-out;
