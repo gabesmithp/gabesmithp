@@ -7,7 +7,7 @@ class Box extends Component {
     var scene = new THREE.Scene();
     var camera = new THREE.PerspectiveCamera( 110, window.innerWidth/window.innerHeight, 0.5, 1000 );
     var renderer = new THREE.WebGLRenderer({alpha: true});
-    renderer.setSize( 2500, 2500 );
+    renderer.setSize( 2300, 2300 );
     document.body.appendChild( renderer.domElement );
     var geometry = new THREE.BoxGeometry( 1, 1, 1 );
     var material = new THREE.MeshBasicMaterial( { color: 0xdddddd, opacity: 0.6, transparent: true } );

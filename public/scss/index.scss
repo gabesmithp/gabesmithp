@@ -160,7 +160,7 @@ a,
 }
 
 .footer {
-  height: 6.5em;
+  height: 7.5em;
   background: $peach;
   border: 1px solid black;
   position: absolute;
@@ -169,10 +169,10 @@ a,
 }
 
 .footer-link {
-  height: 55%;
-  width: 55%;
+  height: 65%;
+  width: 65%;
   transform: scale(1);
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s;
   &:hover {
     transform: scale(1.07);
   }

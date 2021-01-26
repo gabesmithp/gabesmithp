@@ -447,7 +447,7 @@ a,
 }
 
 .title {
-  font-size: 2.4em;
+  font-size: 2.6em;
   font-weight: 300;
   letter-spacing: 0.3em;
 }
@@ -567,7 +567,7 @@ a,
 }
 
 .footer {
-  height: 6.5em;
+  height: 7.5em;
   background: #ffcfab;
   border: 1px solid black;
   position: absolute;
@@ -576,14 +576,14 @@ a,
 }
 
 .footer-link {
-  height: 55%;
-  width: 55%;
+  height: 65%;
+  width: 65%;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: -webkit-transform 0.4s ease-in-out;
-  transition: -webkit-transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
 .footer-link:hover {
