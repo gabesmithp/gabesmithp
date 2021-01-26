@@ -1,8 +1,8 @@
-@import "variables";
-@import "utilities";
+@import 'variables';
+@import 'utilities';
 
 body {
-  font-family: 'Droid Sans', 'Segoe UI', 'Roboto',sans-serif;
+  font-family: $droid;
   cursor: url('../images/pointer.png'), auto;
   position: relative;
   min-width: 1000px;
@@ -26,7 +26,9 @@ code {
     'Courier New', monospace;
 }
 
-button, a {
+button,
+a,
+.submit {
   cursor: url('../images/hand.png'), auto;
 }
 
@@ -44,7 +46,7 @@ button, a {
   background: $peach;
   padding: 1.5em 4.3em;
   border: 1px solid black;
-  border-radius: .9em;
+  border-radius: 0.9em;
   box-shadow: 4px 4px 0px black;
 }
 
@@ -61,21 +63,28 @@ button, a {
 /********* CUSTOM CLASSES *********/
 
 .navbar {
-  background: $peach;
+  background: $peach; // <---- variable
   padding: 0 4em;
   height: 6.5em;
   border: 1px solid black;
 }
 
 .title {
-  font-size: size(xlarge);
-  font-weight: weight(light);
+  font-size: size(xlarge); // <---- functions
+  font-weight: weight(light); 
   letter-spacing: 0.3em;
 }
 
 .nav-link {
-  margin: 0.8em;
-  font-size: 1.4em;
+  box-sizing: border-box;
+  margin: 1.2em .8em .8em 1.5em;
+  font-size: size(medium); // <---- function
+  border-bottom: 1px solid transparent;
+  padding-bottom: 4px;
+  transition: border-bottom 0.3s;
+  &:hover {  // <---- nesting
+    border-bottom: 1px solid black;
+  }
 }
 
 .blobs {
@@ -83,23 +92,71 @@ button, a {
   min-width: 119em;
   width: stretch;
   height: 295em;
+  bottom: 40em;
   top: 22em;
 }
 
 .button {
-  @include flexCenter(row);
+  @include flexCenter(row); // <---- functions
   @include buttonStyle();
   position: absolute;
   width: 15em;
   height: 2.8em;
   left: 350px;
   top: 500px;
-  transition: all .6s ease-in-out;
-  &:hover {
+  transition: all 0.6s ease-in-out;
+  &:hover { // <---- nesting
     box-shadow: 8px 8px 0px #000000;
     left: 346px;
     top: 496px;
   }
+}
+
+.orb2 {
+  position: relative;
+  top: 65em;
+  left: 70em;
+}
+
+.input-container {
+  position: absolute;
+  bottom: 211em;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 1.4em;
+  box-shadow: 4px 4px 0px black;
+}
+
+.text {
+  height: 2.8em;
+  background: #f3f3f3;
+  border-radius: 0.9em 0 0 0.9em;
+  font-size: size(small);
+  text-align: center;
+  &:focus {
+    outline: none
+  }
+}
+
+.submit {
+  height: 3.1em;
+  background-color: $peach;
+  padding: 0 1.5em 0 1.5em;
+  border-radius: 0 0.9em 0.9em 0;
+  border-left: 2px solid black;
+  font-size: size(small);
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    background: $light-peach;
+  }
+}
+
+.orb1 {
+  position: absolute;
+  bottom: 102em;
+  left: 63em;
 }
 
 .footer {
@@ -115,7 +172,7 @@ button, a {
   height: 55%;
   width: 55%;
   transform: scale(1);
-  transition: transform .4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
   &:hover {
     transform: scale(1.07);
   }

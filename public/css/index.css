@@ -416,7 +416,7 @@ em, .i {
 }
 
 body {
-  font-family: 'Droid Sans', 'Segoe UI', 'Roboto',sans-serif;
+  font-family: "Droid Sans", "Segoe UI", "Roboto", sans-serif;
   cursor: url("../images/pointer.png"), auto;
   position: relative;
   min-width: 1000px;
@@ -430,7 +430,9 @@ code {
   font-family: source-code-pro, 'Droid Sans', Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-button, a {
+button,
+a,
+.submit {
   cursor: url("../images/hand.png"), auto;
 }
 
@@ -451,8 +453,18 @@ button, a {
 }
 
 .nav-link {
-  margin: 0.8em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 1.2em .8em .8em 1.5em;
   font-size: 1.4em;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 4px;
+  -webkit-transition: border-bottom 0.3s;
+  transition: border-bottom 0.3s;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid black;
 }
 
 .blobs {
@@ -462,6 +474,7 @@ button, a {
   width: -moz-available;
   width: stretch;
   height: 295em;
+  bottom: 40em;
   top: 22em;
 }
 
@@ -483,7 +496,7 @@ button, a {
   background: #ffcfab;
   padding: 1.5em 4.3em;
   border: 1px solid black;
-  border-radius: .9em;
+  border-radius: 0.9em;
   -webkit-box-shadow: 4px 4px 0px black;
           box-shadow: 4px 4px 0px black;
   position: absolute;
@@ -491,8 +504,8 @@ button, a {
   height: 2.8em;
   left: 350px;
   top: 500px;
-  -webkit-transition: all .6s ease-in-out;
-  transition: all .6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .button:hover {
@@ -500,6 +513,57 @@ button, a {
           box-shadow: 8px 8px 0px #000000;
   left: 346px;
   top: 496px;
+}
+
+.orb2 {
+  position: relative;
+  top: 65em;
+  left: 70em;
+}
+
+.input-container {
+  position: absolute;
+  bottom: 211em;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 1.4em;
+  -webkit-box-shadow: 4px 4px 0px black;
+          box-shadow: 4px 4px 0px black;
+}
+
+.text {
+  height: 2.8em;
+  background: #f3f3f3;
+  border-radius: 0.9em 0 0 0.9em;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.text:focus {
+  outline: none;
+}
+
+.submit {
+  height: 3.1em;
+  background-color: #ffcfab;
+  padding: 0 1.5em 0 1.5em;
+  border-radius: 0 0.9em 0.9em 0;
+  border-left: 2px solid black;
+  font-size: 1.4em;
+}
+
+.submit:focus {
+  outline: none;
+}
+
+.submit:active {
+  background: #ffdabd;
+}
+
+.orb1 {
+  position: absolute;
+  bottom: 102em;
+  left: 63em;
 }
 
 .footer {
@@ -516,10 +580,10 @@ button, a {
   width: 55%;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: -webkit-transform .4s ease-in-out;
-  transition: -webkit-transform .4s ease-in-out;
-  transition: transform .4s ease-in-out;
-  transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
 
 .footer-link:hover {
